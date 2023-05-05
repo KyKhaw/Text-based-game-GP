@@ -19,7 +19,7 @@ int main() {
 	cin >> name;
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
-	cout << "welcome, "<< name<< ", please press enter to roll a dice ";
+	cout << "Welcome "<< name<< ", please press enter to roll a dice ";
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	dice_result = dice();
 
