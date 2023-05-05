@@ -12,10 +12,13 @@ class Character {
 		string job;
         	string description;
         	string confession;
-		Character(string name_, int age_, string job_, string description_, string confession_);
-		void set_character(string name_, int age_, string job_, string description_, string confession_);
+		string conversation;
+
+		Character(string name_, int age_, string job_, string description_, string confession_, string conversation_);
+		void set_character(string name_, int age_, string job_, string description_, string confession_, string convsersation_);
         	void showInfo();
         	void showConfession();
+		void showConversation();
 };
 
 class Room {
@@ -29,11 +32,12 @@ class Room {
 
 class MeetingRoom {
 	public:
-		MeetingRoom();
+		int dice;
+		MeetingRoom(int dice_);
 		void welcome();
 		void showSuspects();
 		void askSuspects();
-		void move();
+		void submitAnswer();
 };
 
 
@@ -42,6 +46,7 @@ extern Room bedRoom, livingRoom, servantQuarter, kitchen, swimmingPool, meadow;
 extern Character characters[6];
 extern string w_1, w_2, w_3, w_4, w_5, w_6;
 extern string weapons[6];
-extern MeetingRoom meetingRoom;
+extern Room rooms[6];
+
 
 #endif 
