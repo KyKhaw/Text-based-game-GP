@@ -20,45 +20,45 @@ int main() {
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 	cout << "welcome, "<< name<< ", please press enter to roll a dice ";
-	cin.ignore();
+	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	dice_result = dice();
 
 	cout << "The dice result is "<<dice_result<<endl;
 	cout << "Press to start the game... ...";
-	cin.ignore();
+	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	system("clear");
 	// story starts	
-	cout << "One day, a policeman knocked on your door... ..." << endl;
-	cout << "The police tell you that a wealthy woman invites you to track down a criminal case." << endl;
-	cout << "Her husband Mr Boddy, a billionaire, was killed at his home during a ball party."<< endl;
-	cout << "press enter to continue ... ... ";
-	cin.ignore();
+	cout << "One day, a policeman knocks on your door... ..." << endl;
+	cout << "The police tells you that a wealthy woman has invited you to track down a criminal case." << endl;
+	cout << "Her billionaire husband Mr Buddy, was killed at his home during a ball party."<< endl;
+	cout << "Press enter to continue ... ... ";
+	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	cout << endl;
 	
-	cout << "However, the wife has not been proved innocent, and therefore is also kept at her house." << endl;
-	cout << "The local police team has failed to spot the murderer, and the remuneration offered by this woman is extremly lucrative."<<endl;
-	cout << "You have accepted the case and a policeman is driving you to Mr. Boddy's house." <<endl;
-	cout << "press enter to continue ... ... ";
-	cin.ignore();
+	cout << "However, the wife has not yet been proven innocent, and therefore will also be kept at the house as a potential suspect." << endl;
+	cout << "The local police team has failed to determine the murderer, and the remuneration offered by this woman is extremely lucrative."<<endl;
+	cout << "You have accepted the case and a policeman is driving you to Mr. Buddy's house." <<endl;
+	cout << "Press enter to continue ... ... ";
+	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	cout << endl;
 	
-	cout << "When you arrive, policemen are in control of the crime schene."<<endl;
-	cout << "You are about to enter the house, and the gate-guarding policeman told you that -"<<endl;
+	cout << "When you arrive, you notice troops of policemen guarding the crime scene."<<endl;
+	cout << "As you are about to enter the house, the gate-guarding policeman tells you that..."<<endl;
 	cout << "************************************************************"<<endl;
-	cout << "Mr. Bobby was killed with a " << weapons[dice_result] << " at " << rooms[dice_result].name << endl;
+	cout << "Mr. Buddy was killed with a " << weapons[dice_result] << " at " << rooms[dice_result].name << endl;
 	cout << "************************************************************"<<endl;
 	cout << "All the party participants have been kept in the meeting room for your interrogation."<<endl;
-	cout << "Press to enter to Sir Hugh's house..." ;
-	cin.ignore();
+	cout << "Press enter to set foot in Sir Hugh's house..." ;
+	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	cout << endl;
 	// enter meeting room to meet with suspects
 	cout << "You have entered Mr. Bobby's house. A policeman is leading you to the meeting room." <<endl;
-	cout << "After the policeman opens the door for you, you six persons in the room, all with nurvous and horrified looks."<<endl;
-	cout << "They are all party members. After the murder, all of them have been kept within the house."<<endl;
-	cout << "Before you ask the them questions, the policeman nearby hands you some documents with informations of these people."<<endl;
+	cout << "The policeman opens the door, and you are faced with the six prime suspects, each of them holding nervous and horrified expressions."<<endl;
+	cout << "These are all party members. After the murder, all of them have been kept within the house."<<endl;
+	cout << "Before you begin asking questions, the policeman nearby hands you some documents containing information regarding each of the suspects."<<endl;
 	cout << endl;
-	cout << "Enter to continue ...";
-	cin.ignore();
+	cout << "Press enter to continue ...";
+	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	system("clear");
 
 	// read the documents about the suspects; 
