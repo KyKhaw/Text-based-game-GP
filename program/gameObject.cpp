@@ -4,139 +4,112 @@
 
 using namespace std;
 
-class Object {
-	public:
-		string name;
-		string hints;
-		Object(string name_, string hints_);
-		void set_Object(string name_, string hints_);
-		void showInfo();
-};
+// initialize characters
+Character wife("Mrs. Buddy", 32, "House wife", "A petite woman with dark brown hair standing alert.\n Slightly concealing her arms.\n Her upper body appears well-toned and her sullen eyes seem upset.\n", "He was begging for it!\n How dare he cheat on me when he had everything!\n I had taken him to the woods at night under the excuse of a moonlight getaway.\n I had hidden the hunting crossbow earlier there and I killed him.\n");
 
-class Weapon {
-	public:
-		string name;
-		string description;
-		Weapon(string name_, string description_);
-		void set_weapon(string name_, string description_);
-		void showInfo();
-};
+Character starlet("Ms.Scarlett", 22, "Hollywood actor", "Mr. Buddy used to sponser her career.\n There were rumours that she was having an affair with the wealthy man.\n", "After his wife found about out our relationship, he abruptly stopped contacting me.\n I came to the ball party to talk with him. I wasn’t trying to kill him.\n I just wanted to threaten him. It was an accident.\n");
 
-class Character {
-	public:
-        	string name;
-        	int age;
-        	string description;
-        	string confession;
-		Character(string name_, int age_, string description_, string confession_);
-		void set_character(string name_, int age_, string description_, string confession_);
-        	void showInfo();
-        	void showConfession():
-};
+Character author("Mr. White", 40, "Book writer", "The wealthy man was an investor in his publishing company.\n The company went bankrupt after the wealthy man pulled out his investment.\n Mr.White was in huge debt because of it.\n", "He was a selfish man. Because of him, my company and career were over. I came to the ball party to talk with him. He just won’t listen to me. I thought he would come to his senses and listen to me. But, it was too late.\n");
 
-class MurderRoom {
-	public:
-		string name;
-		Object object[4];
-		MurderRoom(string name_, Object object_[4]);
-		void set_MurderRoom(string name_, Obejct object_[4]);
-		void welcome();
-		void showObject();
-		void move();
-};
+Character servant("Mr.Francis", 55, "House servant", "He looks older than he says he is and rather sickly.\n His frail posture is accentuated by a slight hunch in it and his gaunt face with a weak smile.\n", "Servant!? Servant!? I have a name, don't I? Fifteen years I served the man and he never bothered to ask my name.\n I couldn’t bear the anger anymore.\n I knew his worst enemies were invited to dinner so I took the opportunity to finish him off in the living room.");
 
-class MeetingRoom {
-		void welcome();
-		void showSuspects();
-		void move();
+Character colonel("Mr.Phillip", 51, "Military colonel", "Hayes was a general in one military corporation, and once comitted war crime.\n Mr Buddy spent huge amount of money buying out the journalists with information.\n" , "Oh Lord, please forgive me.” He murmured.\n Now I confess that I have planned to kill my old friend, Buddy, on the way to this majestic mansion.\n He did many good things for me, but at the same time he tried to take advantage of what he did to me.\n I had no choice but to kill him to keep my reputation.\n");
+
+Character lawyer("Mr.Wesley", 47, "Family lawyer", "He conducted unlawful acts (torts) when he was investigating a requested case.\n And he was further being bought over to wealthy people's side when he was doing a case.\n Mr. Buddy knows everything about his misdeeds\n", "“There was no choice for me. I had to kill him to save my children and my beloved wife.\n At first, I tried to have a chat with him.\n I tried, at least. But that filthy man never listened to me!\n So I wound his neck with my tie that I was holding in my hand.\n");
+
+Character characters[6] = {wife, lawyer, starlet, colonel, author, servant};
+
+// initialize rooms
+Room forest("forest", "Unfortunately, you have not found any useful information.\n");
+
+Room Kitchen("kitchen", "Unfortunately, you have not found any useful information.\n");
+
+Room swimmingPool("swimming pool", "One earring was found near the swimming pool.\n Meanwhile, you have found a piece of paper in the pool, which has been blurred but looks like a persoan letter.\n");
+
+Room bedRoom("master bedroom", "The gun was kept where it used to reside, but one bullet is missing from the chamber.\n");
+
+Room meadow("Meadow", "Unfortunately, you have not found any useful information.\n");
+
+Room livingRoom("living room", "The fireplace poker looks pretty new.\n");
+
+Room rooms[6] = {forest, kitchen, siwimmingPool, bedRoom, meadow, livingRoom};
+
+// initialize meeting room
+MeetingRoom meetingRoom;
+
+//initialize weapon list
+string weapon[6] = {"crossbow", "necktie", "knife", "revolver gun", "baseball bat", "fireplace poker"};
+
+//define class functions
+Character::Character(string name_, int age_, string job_, string description_, string confession_) {
+  	set_character(name_, age_, job_, description_, confession_);
 }
 
-Object::Object(string name_, string hints_) {
-  set_Object(name_, hints_);
-}
-
-void Object::set_Object(string name_, string hints_) {
-  name = name_;
-  hints = hints_;
-}
-
-void Object::showInfo() {
-  cout << "Object Name: " << name << endl;
-  cout << "Hints: " << hints << endl;
-}
-
-Weapon::Weapon(string name_, string description_) {
-  set_weapon(name_, description_);
-}
-
-void Weapon::set_weapon(string name_, string description_) {
-  name = name_;
-  description = description_;
-}
-
-void Weapon::showInfo() {
-  cout << "Weapon Name: " << name << endl;
-  cout << "Description: " << description << endl;
-}
-
-Character::Character(string name_, int age_, string description_, string confession_) {
-  set_character(name_, age_, description_, confession_);
-}
-
-void Character::set_character(string name_, int age_, string description_, string confession_) {
-  name = name_;
-  age = age_;
-  description = description_;
-  confession = confession_;
+void Character::set_character(string name_, int age_, string job_, string description_, string confession_) {
+	job = job_;
+  	name = name_;
+  	age = age_;
+  	description = description_;
+  	confession = confession_;
 }
 
 void Character::showInfo() {
-  cout << "Name: " << name << endl;
-  cout << "Age: " << age << endl;
-  cout << "Description: " << description << endl;
+  	cout << "Name: " << name << endl;
+  	cout << "Age: " << age << endl;
+  	cout << "Description: " << description << endl;
 }
 
 void Character::showConfession() {
-  cout << "Confession: " << confession << endl;
+  	cout << "Confession: " << confession << endl;
 }
 
-MurderRoom::MurderRoom(string name_, Object object_[4]) {
-  set_MurderRoom(name_, object_);
+Room::Room(string name_, string hints_) {
+  	set_MurderRoom(name_, string hints_);
 }
 
-void MurderRoom::set_MurderRoom(string name_, Object object_[4]) {
-  name = name_;
-  for (int i = 0; i < 4; i++) {
-    object[i] = object_[i];
-  }
+void Room::set_Room(string name_) {
+  	name = name_;
+	hints = hints_;
 }
 
-void MurderRoom::welcome() {
-  cout << "Welcome to the Murder Room: " << name << endl;
+
+void Room::showHints() {
+	cout << "You are now in " << name << " ." << endl;
+  	cout << hints << endl; 
 }
 
-void MurderRoom::showObject() {
-  cout << "Objects in the room:" << endl;
-  for (int i = 0; i < 4; i++) {
-    object[i].showInfo();
-  }
-}
 
-void MurderRoom::move() {
-  cout << "Moving to the next room..." << endl;
+MeetingRoom::MeetingRoom(){
+	cout << "Welcome back to the meeting room." << endl;
+	
 }
 
 void MeetingRoom::welcome() {
-  cout << "Welcome to the Meeting Room" << endl;
+  	cout << "Welcome to the Meeting Room" << endl;
 }
 
 void MeetingRoom::showSuspects() {
-  cout << "The suspects are:" << endl;
-  cout << "1. John" << endl;
-  cout << "2. Alice" << endl;
-  cout << "3. Bob" << endl;
+ 	for (int i=0; i<6; i++) {
+  		cout << "No." << i+1 << " : " << characters[i].name << endl;
+ 	}
+ 	int num;
+  	cout << "Enter corresponding number for document inspection or 0 to exit..." << endl;
+  	
+  	while (cin >> num) {
+  		if (num == 0){
+  			break;
+  		}else if ((num > 0) && (num<7)){
+  			characters[num].showInfo();
+  		}else {
+  			cout << "Incorrect input." << endl;
+  		}
+  	}
 }
 
 void MeetingRoom::move() {
-  cout << "Moving to the next
+  	cout << "Moving to the next"<<endl;
+}
+
+void MeetingRoom::askSuspects(){
+	cout << "";
 }
