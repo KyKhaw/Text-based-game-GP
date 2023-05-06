@@ -17,12 +17,12 @@ Case Closed is a one-player text-based game. The player has to solve a murder my
 
 
 ## Compilation and execution instructions
-'''
+```
 git clong https://github.com/ChenyXu/COMP2113_Group_132_Project
 cd program
 make main
 ./main
-'''
+```
 
 
 ## Group project requirements
