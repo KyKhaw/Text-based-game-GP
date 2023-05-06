@@ -8,19 +8,19 @@ using namespace std;
 
 // initialize characters
 Character wife("Mrs. Buddy", 32, "House wife", "A petite woman with dark brown hair standing alertly.\n Her hands are tucked behind her back, as if trying to conceal them.\n Her upper body and arms appears well-toned and her sullen eyes seem upset.\n", "He was begging for it!\n How dare he cheat on me when he had everything!\n I had taken him to the woods at night under the excuse of a moonlight getaway.\n I had hidden the hunting crossbow earlier there and I killed him.\n", 
-	       "I vividly remember that our servant, Francis, asked me if I had a chance to access to the fireplace.\n He seemed to be in a panic a lot.\n");
+	       "I vividly remember our servant Francis, asking if I had a chance to access the fireplace.\n He seemed to be in a state of panic.\n");
 
 Character starlet("Ms. Scarlett", 22, "Hollywood actor", "Mr. Buddy used to sponsor her career.\n There were rumours that she was having an affair with the wealthy man.\n", "After his wife found about out our relationship, he abruptly stopped contacting me.\n I came to the ball party to talk with him. I wasn’t trying to kill him.\n I just wanted to threaten him. It was an accident.\n", 
-		  "I heard a gunshot last night.\n I woke up because of that sound, but nothing special happend after that, so I went to bed again.\n");
+		  "I heard a gunshot last night.\n I woke up because of the sound, but nothing noteworthy happened after that, so I went back to bed.\n");
 
 Character author("Mr. White", 40, "Book writer", "The wealthy man was a major investor in his publishing company.\n The company went bankrupt after the wealthy man withdrew his investment.\n Mr.White fell into huge debt because of it.\n", "He was a selfish man. Because of him, my company and career were over. I came to the ball party to talk with him. He just won’t listen to me. I thought he would come to his senses and listen to me. But, it was too late.\n", 
-		 "I witnessed Mr. Wesley had an argument with Mr. Buddy.\n Recall that, I noticed it got intenser as time went by.\n");
+		 "I witnessed Mr. Wesley having an argument with Mr. Buddy.\n If I can recall, it got more and more intense as time went on.\n");
 
 Character servant("Mr. Francis", 55, "House servant", "He looks older than he says he is and rather sickly.\n His frail posture is accentuated by a slight hunch in it and his gaunt face with a weak smile.\n", "Servant, servant, servant! I have a name, don't I? Fifteen years! Fifteen years I have served the man, and not once has he bothered to ask for my name.\n I couldn’t bear the anger anymore.\n I knew his worst enemies were invited to dinner so I took the opportunity to finish him off in the living room.", 
-		  "Mr. White gave me his laundries this morning.\n It was his shirt and trouser and those were with some dirts and stains.\n I did not ask him why he got dirts on his cloths though.\n");
+		  "Mr. White gave me his laundry this morning.\n His shirt and trouser seemed to be stained by dirt and mud.\n Although, I did not have the chance to ask him why his clothes were in such a condition.\n");
 
 Character colonel("Mr. Phillip", 51, "Military colonel", "Hayes was a general in one military corporation, and once comitted war crime.\n Mr Buddy spent huge amount of money buying out the journalists with information.\n" , "Oh Lord, please forgive me.” He murmured.\n Now I confess that I had planned to kill my old friend, Buddy, on the way to his ever majestic mansion.\n He did many favours for me, but at the same time, he tried to take advantage of those favours. Guilt tripping, gaslighting... \n I had no choice but to kill him! For my dignity, my reputation!\n",
-		  "Last night, I saw Mrs. Scarlette and Mr. Buddy entering the swimming pool together.\n");
+		  "Last night, I saw Mrs. Scarlette and Mr. Buddy enter the swimming pool together.\n");
 
 Character lawyer("Mr. Wesley", 47, "Family lawyer", "He conducted unlawful acts (torts) while investigating a requested case.\n And he was further being bought over to wealthy people's side when he was conducting a case.\n Mr. Buddy knows everything about his misdeeds\n", "“I had no choice. I had to kill him. To save my children, my beloved wife!\n At first, I tried to talk.\n I tried, at least! But that filthy man never listened to a word I said!\n So I wound his neck with my tie that I was holding in my hand.\n", 
 		 "I saw Mrs.Buddy around a ditch in the forest.\n");
@@ -32,9 +32,9 @@ Room forest("forest", "Unfortunately, you have not found any useful information.
 
 Room kitchen("kitchen", "Unfortunately, you have not found any useful information.\n");
 
-Room swimmingPool("swimming pool", "One earring was found near the swimming pool.\n Meanwhile, you have found a piece of paper in the pool, which has been blurred but looks like a persoan letter.\n");
+Room swimmingPool("swimming pool", "An earring was found near the swimming pool.\n Meanwhile, you have found a piece of paper in the pool. It has been blurred out, but looks like a personal letter.\n");
 
-Room bedRoom("master bedroom", "The gun was kept where it used to reside, but one bullet is missing from the chamber.\n");
+Room bedRoom("master bedroom", "The gun was kept where it used to reside, but a bullet is missing from the chamber.\n");
 
 Room meadow("Meadow", "Unfortunately, you have not found any useful information.\n");
 
@@ -95,7 +95,7 @@ void Room::showHints() {
 	cout << endl;
   	cout << hints << endl;
 	cout << endl;
-	cout << "Enter to go back to the meeting room." << endl;
+	cout << "Press enter to go back to the meeting room." << endl;
 	cin.ignore();
 	cout << endl; 
 }
@@ -140,7 +140,7 @@ void MeetingRoom::showSuspects() {
  	}
 	cout << endl;
  	int num;
-  	cout << "Enter the corresponding number for document inspection or 0 to exit..." << endl;
+  	cout << "Enter the corresponding number for document inspection or enter 0 to exit..." << endl;
 	cout << endl;
   	
   	while (cin >> num) {
@@ -170,7 +170,7 @@ void MeetingRoom::submitAnswer(){
 		exit(0);
 	} else{
 	cout << "Sorry your answer is not correct." << endl; 
-	cout << "Enter to go back to the meeting room."<<endl;
+	cout << "Press enter to go back to the meeting room."<<endl;
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	cin.ignore();
 	}
@@ -184,7 +184,7 @@ void MeetingRoom::askSuspects(){
 	cout << endl;
 	
 	int num;
-  	cout << "Enter the corresponding number for document inspection or 0 to exit..." << endl;
+  	cout << "Enter the corresponding number for document inspection or enter 0 to exit..." << endl;
 	cout << endl;
   	
   	while (cin >> num) {
@@ -216,7 +216,7 @@ void MeetingRoom::noteBook(){
 		} else {
 			cout << "Your note book is blank. Please write before reading. " << endl;
 		}
-		cout << "Enter to exit note book." << endl;
+		cout << "Press enter to exit note book." << endl;
 		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 	} else if (command == "write") {
@@ -226,9 +226,9 @@ void MeetingRoom::noteBook(){
 		cout << endl;
 		notes.push_back(note);
 		cout << "Notes saved. " << endl;
-		cout << "Enter to exit note book." << endl;
+		cout << "Press enter to exit note book." << endl;
 		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	} else {
-		cout << "incorrect command. " << endl;
+		cout << "Incorrect command. " << endl;
 	}
 }
