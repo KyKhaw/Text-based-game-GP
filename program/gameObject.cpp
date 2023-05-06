@@ -184,17 +184,31 @@ void MeetingRoom::noteBook(){
 	cout << endl;
 	
 	if (command == "read"){
-		for (int i=0; i < notes.size(); i++){
-			cout << "Note " << i << " : " << notes[i] << endl;
-			cout << endl;
+		cout << endl;
+		if (notes.zie() != 0){
+			for (int i=0; i < notes.size(); i++){
+				cout << "Note " << i << " : " << notes[i] << endl;
+				cout << endl;
+			}
+		} else {
+			cout << "Your note book is blank. Please write before reading. " << endl;
 		}
+		cout << "Enter to exit note book." << endl;
+		cin.ignore()
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+	}
+
 	} else if (command == "write") {
+		cout << endl;
 		string note;
 		cin >> note;
 		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 		cout << endl;
 		notes.push_back();
 		cout << "Notes saved. " << endl;
+		cout << "Enter to exit note book." << endl;
+		cin.ignore()
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	} else {
 		cout << "incorrect command. " << endl;
 	}
