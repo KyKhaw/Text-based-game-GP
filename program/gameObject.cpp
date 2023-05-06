@@ -10,14 +10,14 @@ using namespace std;
 Character wife("Mrs. Buddy", 32, "House wife", "A petite woman with dark brown hair standing alertly.\n Her hands are tucked behind her back, as if trying to conceal them.\n Her upper body and arms appears well-toned and her sullen eyes seem upset.\n", "He was begging for it!\n How dare he cheat on me when he had everything!\n I had taken him to the woods at night under the excuse of a moonlight getaway.\n I had hidden the hunting crossbow earlier there and I killed him.\n", 
 	       "I vividly remember our servant Francis, asking if I had a chance to access the fireplace.\n He seemed to be in a state of panic.\n");
 
-Character starlet("Ms. Scarlett", 22, "Hollywood actor", "Mr. Buddy used to sponsor her career.\n There were rumours that she was having an affair with the wealthy man.\n", "After his wife found about out our relationship, he abruptly stopped contacting me.\n I came to the ball party to talk with him. I wasn’t trying to kill him.\n I just wanted to threaten him. It was an accident.\n", 
+Character starlet("Ms. Scarlett", 22, "Hollywood actor", "Mr. Buddy used to sponsor her career.\n There were rumours that she was having an affair with the wealthy man, and would flaunt the jewellery he bought her.\n", "After his wife found about out our relationship, he abruptly stopped contacting me.\n I came to the ball party to talk with him. I wasn’t trying to kill him.\n I just wanted to threaten him. It was an accident.\n", 
 		  "I heard a gunshot last night.\n I woke up because of the sound, but nothing noteworthy happened after that, so I went back to bed.\n");
 
 Character author("Mr. White", 40, "Book writer", "The wealthy man was a major investor in his publishing company.\n The company went bankrupt after the wealthy man withdrew his investment.\n Mr.White fell into huge debt because of it.\n", "He was a selfish man. Because of him, my company and career were over. I came to the ball party to talk with him. He just won’t listen to me. I thought he would come to his senses and listen to me. But, it was too late.\n", 
 		 "I witnessed Mr. Wesley having an argument with Mr. Buddy.\n If I can recall, it got more and more intense as time went on.\n");
 
 Character servant("Mr. Francis", 55, "House servant", "He looks older than he says he is and rather sickly.\n His frail posture is accentuated by a slight hunch in it and his gaunt face with a weak smile.\n", "Servant, servant, servant! I have a name, don't I? Fifteen years! Fifteen years I have served the man, and not once has he bothered to ask for my name.\n I couldn’t bear the anger anymore.\n I knew his worst enemies were invited to dinner so I took the opportunity to finish him off in the living room.", 
-		  "Mr. White gave me his laundry this morning.\n His shirt and trouser seemed to be stained by dirt and mud.\n Although, I did not have the chance to ask him why his clothes were in such a condition.\n");
+		  "Mr. White gave me his laundry this morning.\n His shirt and trouser seemed to be stained by dirt and grass.\n Although, I did not have the chance to ask him why his clothes were in such a condition.\n");
 
 Character colonel("Mr. Phillip", 51, "Military colonel", "Hayes was a general in one military corporation, and once comitted war crime.\n Mr Buddy spent huge amount of money buying out the journalists with information.\n" , "Oh Lord, please forgive me.” He murmured.\n Now I confess that I had planned to kill my old friend, Buddy, on the way to his ever majestic mansion.\n He did many favours for me, but at the same time, he tried to take advantage of those favours. Guilt tripping, gaslighting... \n I had no choice but to kill him! For my dignity, my reputation!\n",
 		  "Last night, I saw Mrs. Scarlette and Mr. Buddy enter the swimming pool together.\n");
@@ -28,17 +28,17 @@ Character lawyer("Mr. Wesley", 47, "Family lawyer", "He conducted unlawful acts 
 Character characters[6] = {wife, lawyer, starlet, colonel, author, servant};
 
 // initialize rooms
-Room forest("forest", "Unfortunately, you have not found any useful information.\n");
+Room forest("forest", "You notice a strand of hair near the clearing. It is difficult to tell, but it looks like it has a shade of hazel.\n");
 
 Room kitchen("kitchen", "Unfortunately, you have not found any useful information.\n");
 
-Room swimmingPool("swimming pool", "An earring was found near the swimming pool.\n Meanwhile, you have found a piece of paper in the pool. It has been blurred out, but looks like a personal letter.\n");
+Room swimmingPool("swimming pool", "You find an earring near the swimming pool.\n Meanwhile, you have found a piece of paper in the pool. It has been blurred out, but looks like a personal letter.\n");
 
-Room bedRoom("master bedroom", "The gun was kept where it used to reside, but a bullet is missing from the chamber.\n");
+Room bedRoom("master bedroom", "The gun is kept where it used to reside, but a bullet is missing from the chamber.\n");
 
-Room meadow("Meadow", "Unfortunately, you have not found any useful information.\n");
+Room meadow("Meadow", "You find small pieces of paper scattered across patches of earth. The shredded words are undecipherable, save some nonsense about payments due.\n");
 
-Room livingRoom("living room", "The fireplace poker looks pretty new.\n");
+Room livingRoom("living room", "You notice that the fireplace poker has a factory seal.\n");
 
 Room rooms[6] = {forest, kitchen, swimmingPool, bedRoom, meadow, livingRoom};
 
