@@ -17,8 +17,10 @@ Case Closed is a one-player text-based game. The player has to solve a murder my
 
 
 ## Compilation and execution instructions
-Enter the command make main to compile the program.
-Enter the command ./main to run the program.
+'''git clong https://github.com/ChenyXu/COMP2113_Group_132_Project'''
+'''make main'''
+'''./main'''
+
 
 ## Group project requirements
 1. Generation of random game sets or events: the player will roll a dice at the beginning of a game, and the dice result will simulate the senario of this game. 
