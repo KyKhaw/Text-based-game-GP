@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "gameObjects.h"
+#include "gameObject.h"
 #include <limits>
 
 using namespace std;
