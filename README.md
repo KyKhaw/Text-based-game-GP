@@ -9,9 +9,11 @@ Case Closed is a one-player text-based game. The player has to solve a murder my
 3. Investigation and deduction
 
 ## Explanation of code requirement 
-For each game set, the murderer and scenarios are decided randomly using a dice roll.
-
-Using the command write to jot down the clues in a file, the player have obtained when exploring the mansion. The player can also use the command read to see the clues he/she has found to help them solve the case.
+1. For each game set, the murderer and scenarios are decided randomly using a dice roll. Hence, the player can play the game multiple times.
+2. 
+3. The player can load game data such as the hints, clues and the map for the decudtion of the murderer in the meeting room. 
+4. Using the command write to jot down the clues in a file, the player have obtained when exploring the mansion. The player can also use the command read to see the clues he/she has found to help with their investigation.
+5. 
 
 ## Non-standard C/C++ libraries used 
 
