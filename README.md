@@ -15,7 +15,6 @@ Case Closed is a one-player text-based game. The player has to solve a murder my
 4. Using the command write to jot down the clues in a file, the player have obtained when exploring the mansion. The player can also use the command read to see the clues he/she has found to help with their investigation.
 5. 
 
-## Non-standard C/C++ libraries used 
 
 ## Compilation and execution instructions
 Enter the command make main to compile the program.
