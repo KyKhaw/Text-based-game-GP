@@ -185,7 +185,7 @@ void MeetingRoom::noteBook(){
 	
 	if (command == "read"){
 		cout << endl;
-		if (notes.zie() != 0){
+		if (notes.size() != 0){
 			for (int i=0; i < notes.size(); i++){
 				cout << "Note " << i << " : " << notes[i] << endl;
 				cout << endl;
@@ -196,8 +196,6 @@ void MeetingRoom::noteBook(){
 		cout << "Enter to exit note book." << endl;
 		cin.ignore()
 		cin.ignore(numeric_limits<streamsize>::max(), '\n');
-	}
-
 	} else if (command == "write") {
 		cout << endl;
 		string note;
