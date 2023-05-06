@@ -2,6 +2,7 @@
 #include <string>
 #include "gameObject.h"
 #include <limits>
+#include <vector>
 
 using namespace std;
 
