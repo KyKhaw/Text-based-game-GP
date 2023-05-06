@@ -1,5 +1,5 @@
-#ifndef GCD_H
-#define GCD_H
+#ifndef FUNC_H
+#define FUNC_H
 
 int dice();
 
