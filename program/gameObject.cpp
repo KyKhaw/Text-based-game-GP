@@ -22,7 +22,7 @@ Character servant("Mr. Francis", 55, "House servant", "He looks older than he sa
 Character colonel("Mr. Phillip", 51, "Military colonel", "Hayes was a general in one military corporation, and once comitted war crime.\n Mr Buddy spent huge amount of money buying out the journalists with information.\n" , "Oh Lord, please forgive me.” He murmured.\n Now I confess that I had planned to kill my old friend, Buddy, on the way to his ever majestic mansion.\n He did many favours for me, but at the same time, he tried to take advantage of those favours. Guilt tripping, gaslighting... \n I had no choice but to kill him! For my dignity, my reputation!\n",
 		  "Last night, I saw Mrs. Scarlette and Mr. Buddy enter the swimming pool together.\n");
 
-Character lawyer("Mr. Wesley", 47, "Family lawyer", "He conducted unlawful acts (torts) while investigating a requested case.\n And he was further being bought over to wealthy people's side when he was conducting a case.\n Mr. Buddy knows everything about his misdeeds\n", "“I had no choice. I had to kill him. To save my children, my beloved wife!\n At first, I tried to talk.\n I tried, at least! But that filthy man never listened to a word I said!\n So I wound his neck with my tie that I was holding in my hand.\n", 
+Character lawyer("Mr. Wesley", 47, "Family lawyer", "His well-dressed appearance completely contrasts the unlawful acts (torts) he conducts while investigating requested cases.\n Swayed by money, he is often bought over to wealthy peoples' sides when he conducts cases.\n Mr. Buddy knew all about his misdeeds\n", "“I had no choice. I had to kill him. To save my children, my beloved wife!\n At first, I tried to talk.\n I tried, at least! But that filthy man never listened to a word I said!\n So I wound his neck with my tie that I was holding in my hand.\n", 
 		 "I saw Mrs.Buddy around a ditch in the forest.\n");
 
 Character characters[6] = {wife, lawyer, starlet, colonel, author, servant};
@@ -30,7 +30,7 @@ Character characters[6] = {wife, lawyer, starlet, colonel, author, servant};
 // initialize rooms
 Room forest("forest", "You notice a strand of hair near the clearing. It is difficult to tell, but it looks like it has a shade of hazel.\n");
 
-Room kitchen("kitchen", "Unfortunately, you have not found any useful information.\n");
+Room kitchen("kitchen", "You finda stray button on the kitchentop, painted crimson in blood.\n");
 
 Room swimmingPool("swimming pool", "You find an earring near the swimming pool.\n Meanwhile, you have found a piece of paper in the pool. It has been blurred out, but looks like a personal letter.\n");
 
