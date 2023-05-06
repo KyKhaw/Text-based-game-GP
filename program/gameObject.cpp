@@ -101,26 +101,29 @@ void MeetingRoom::welcome() {
 	cout << "*******************************************"<<endl;
   	cout << "You are now in the meeting room" << endl;
 	cout << "*******************************************"<<endl;
-	cout << "Enter ask for interrogation, or move for visiting crime scheme"<<endl;
-	cout << "Enter check to read documents again, or submit to sumbit the answer" << endl;
+	cout << "Please enter command for your next move: "<<endl;
+	cout << endl;
+	cout << "ask: perform interrogation among suspects. " << endl;
+	cout << "move: inspect the crime schene. " << endl;
+	cout << "check: check the documents of these suspects again. " << endl;
+	cout << "submit: tell the police about your answer. " << endl;
+	cout << "note: take notes of what you have in mind. " << endl; 
 	cout << endl;
 
 	string command;
 	cin >> command;
+	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	if (command == "ask"){
 		askSuspects();
-		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	} else if (command == "move") {
 		rooms[dice].showHints();
-		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	} else if (command == "check") {
-		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 		showSuspects();
 	} else if (command == "submit") {
-		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 		submitAnswer();
-	} 
-
+	} else if (command == "note"){
+		noteBook(); 
+	}
 }
 
 void MeetingRoom::showSuspects() {
@@ -171,3 +174,27 @@ void MeetingRoom::askSuspects(){
 	cin.ignore();
 }
 
+void MeetingRoom::noteBook(){
+	system("clear");
+	cout << "Enter command: read / write" << endl;
+	string command;
+	cin >> command;
+	cin.ignore(numeric_limits<streamsize>::max(), '\n');
+	cout << endl;
+	
+	if (command == "read"){
+		for (int i=0; i < notes.size(); i++){
+			cout << "Note " << i << " : " << notes[i] << endl;
+			cout << endl;
+		}
+	} else if (command == "write") {
+		string note;
+		cin >> note;
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << endl;
+		notes.push_back();
+		cout << "Notes saved. " << endl;
+	} else {
+		cout << "incorrect command. " << endl;
+	}
+}
