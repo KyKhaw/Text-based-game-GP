@@ -48,7 +48,6 @@ class MeetingRoom {
 extern Character lawyer, starlet, author, colonel, gardener, wife;
 extern Room bedRoom, livingRoom, servantQuarter, kitchen, swimmingPool, meadow;
 extern Character characters[6];
-extern string w_1, w_2, w_3, w_4, w_5, w_6;
 extern string weapons[6];
 extern Room rooms[6];
 
