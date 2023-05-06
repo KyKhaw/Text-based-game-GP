@@ -68,7 +68,7 @@ void Character::showInfo() {
 }
 
 void Character::showConfession() {
-  	cout << name << ": " << ednl;
+  	cout << name << ": " << endl;
 	cout << confession << endl;
 	cout << endl;
 }
