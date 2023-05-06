@@ -108,10 +108,10 @@ void MeetingRoom::welcome() {
 	cout << "*******************************************"<<endl;
   	cout << "You are now in the meeting room" << endl;
 	cout << "*******************************************"<<endl;
-	cout << "Please enter command for your next move: "<<endl;
+	cout << "Please enter a command for your next move: "<<endl;
 	cout << endl;
-	cout << "ask: perform interrogation among suspects. " << endl;
-	cout << "move: inspect the crime schene. " << endl;
+	cout << "ask: interrogate the suspects. " << endl;
+	cout << "move: inspect the crime scene. " << endl;
 	cout << "check: check the documents of these suspects again. " << endl;
 	cout << "submit: tell the police about your answer. " << endl;
 	cout << "note: take notes of what you have in mind. " << endl; 
@@ -139,7 +139,7 @@ void MeetingRoom::showSuspects() {
  	}
 	cout << endl;
  	int num;
-  	cout << "Enter corresponding number for document inspection or 0 to exit..." << endl;
+  	cout << "Enter the corresponding number for document inspection or 0 to exit..." << endl;
   	
   	while (cin >> num) {
   		if (num == 0){
@@ -154,7 +154,7 @@ void MeetingRoom::showSuspects() {
 
 void MeetingRoom::submitAnswer(){
 	string murderer;
-	cout << "Please type the murderer in you mind and press enter." << endl;
+	cout << "Please type in the murderer you have in mind and press enter." << endl;
 	cout << endl;
 	getline(cin, murderer);
 	if (murderer == characters[dice].name) {
