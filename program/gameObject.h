@@ -2,8 +2,9 @@
 #define STRUCT_H
 
 #include <string>
-using namespace std;
+#include <vector>
 
+using namespace std;
 
 class Character {
 	public:
@@ -33,12 +34,15 @@ class Room {
 class MeetingRoom {
 	public:
 		int dice;
+		vector<string> notes;
 		MeetingRoom(int dice_);
 		void welcome();
 		void showSuspects();
 		void askSuspects();
 		void submitAnswer();
+		void noteBook();
 };
+
 
 
 extern Character lawyer, starlet, author, colonel, gardener, wife;
