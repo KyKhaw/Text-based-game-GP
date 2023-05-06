@@ -66,7 +66,8 @@ int main() {
 	meetingRoom.showSuspects();
 	cout << endl;
 	system("clear");
-
+	
+	// Loop until the correct answer is submitted
 	while (true) {
 	system("clear");
 	meetingRoom.welcome();
