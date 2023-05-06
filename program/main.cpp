@@ -4,7 +4,7 @@
 #include <ios>
 #include <limits>
 #include "func.h"
-#include "gameObjects.h"
+#include "gameObject.h"
 
 
 using namespace std;
