@@ -20,9 +20,14 @@ Case Closed is a one-player text-based game. The player has to solve a murder my
 Enter the command make main to compile the program.
 Enter the command ./main to run the program.
 
+## Group project requirements
+1. Generation of random game sets or events: the player will roll a dice at the beginning of a game, and the dice result will simulate the senario of this game. 
+2. Data structures and dynamic memory management: A string vector is utilised for the player to store notes during the game
+3. File input/output: one I/O file is used to record playered senarios to avoid repetition
+4. Program codes in multiple files: our program is comprised of five files
+5. Proper indentation and naming styles: we have consistent naming style and correct indentation
+5. In-code documentation: codes are annotated 
+
+
 ## Team members 
-Xu Chenning
-Khaw Khai Yuan
-Lee Jihyeon
-Patel Harshvardhan
-Rai Sammi
+Xu Chenning, Khaw Khai Yuan, Lee Jihyeon, Patel Harshvardhan,Rai Sammi
