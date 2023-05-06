@@ -1,4 +1,5 @@
-# Text-based-game-GP
+# Case Closed
+
 ## Description
 Case Closed is a one-player text-based game. The player has to solve a murder mystery. Mr. Buddy was murdered in his mansion. There is a murderer among the 6 suspects who were called for interrogation.  The player can walk through the mansion and its surroundings to find clues to solve the mystery and catch the murderer.
 
@@ -9,6 +10,8 @@ Case Closed is a one-player text-based game. The player has to solve a murder my
 
 ## Explanation of code requirement 
 For each game set, the murderer and scenarios are decided randomly using a dice roll.
+
+Using the command write to jot down the clues in a file, the player have obtained when exploring the mansion. The player can also use the command read to see the clues he/she has found to help them solve the case.
 
 ## Non-standard C/C++ libraries used 
 
